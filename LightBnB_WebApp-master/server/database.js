@@ -88,7 +88,6 @@ exports.addUser = addUser;
  * @return {Promise<[{}]>} A promise to the reservations.
  */
 const getAllReservations = function(guest_id, limit = 10) {
-  // return getAllProperties(null, 2);
 
   return new Promise((resolve, reject) => {
     const queryStr = `
@@ -107,8 +106,6 @@ const getAllReservations = function(guest_id, limit = 10) {
   });
 };
 exports.getAllReservations = getAllReservations;
-
-getAllReservations(283);
 
 /// Properties
 
